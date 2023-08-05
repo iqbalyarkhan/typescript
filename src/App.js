@@ -29,7 +29,8 @@ function App() {
     },
   ];
 
-  const [searchTerm, setSearchTerm] = React.useState('');
+  // Adding an initial state here will affect what's filtered in the list
+  const [searchTerm, setSearchTerm] = React.useState('React');
 
   const handleSearch = event => {
     setSearchTerm(event.target.value);
